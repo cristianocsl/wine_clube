@@ -114,3 +114,20 @@
     flex-direction: column;
   }
 }
+
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+@media(max-width: 540px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}
