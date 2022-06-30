@@ -24,7 +24,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 import styles from '../styles/Home.module.css'
-import styled from 'styled-components'
 
 export default function MenuMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -32,7 +31,7 @@ export default function MenuMobile() {
 
   return (
     <div className={styles.mobile}>
-      <Flex alignItems='center' ml={'-1em'} align={'center'}>
+      <Flex ml={'-1em'} align={'center'}>
         <Button ref={btnRef} colorScheme='teal' mr={'27px'} onClick={onOpen}>
           <HamburgerIcon boxSize={'27px'}/>
         </Button>
