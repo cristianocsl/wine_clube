@@ -18,7 +18,7 @@ import styles from '../styles/Home.module.css'
 export default function MenuDesktop () {
   return (
     <div className={styles.desktop}>
-      <Flex align={'center'} height={'80px'} bg={'red'} width={'100%'} mt={-10} justifyContent={'space-around'}>
+      <Flex align={'center'} height={'88px'} bg={'red'} width={'100%'} mt={-10} justifyContent={'space-around'}>
         <Flex align={'center'}>
           <Image ml={10} mr={40} src={'white.svg'} height={27.77}/>
 
