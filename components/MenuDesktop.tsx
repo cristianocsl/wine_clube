@@ -22,7 +22,7 @@ export default function MenuDesktop () {
         <Flex align={'center'}>
           <Image ml={'80px'} mr={'70px'} src={'white.svg'} height={'27.77px'}/>
 
-          <Breadcrumb separator='' mr={70}>
+          <Breadcrumb separator='' mr={70} color={'#555555'}>
             <BreadcrumbItem>
               <BreadcrumbLink href='#' fontSize={'20px'}>Clube</BreadcrumbLink>
             </BreadcrumbItem>
