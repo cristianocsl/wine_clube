@@ -3,17 +3,14 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
   Flex,
   Image,
-  Box,
   Circle,
   Avatar,
   AvatarGroup,
-  AvatarBadge,
 } from '@chakra-ui/react'
-import { SearchIcon, HamburgerIcon } from '@chakra-ui/icons'
 import styles from '../styles/Home.module.css'
+import { BiSearch } from 'react-icons/bi'
 
 export default function MenuDesktop () {
   return (
@@ -46,12 +43,12 @@ export default function MenuDesktop () {
         </Flex>
 
         <AvatarGroup spacing={15} mr={'70px'}>
-          <Circle size='56px' borderWidth={1} borderColor={'gray'}>
-            <SearchIcon />
+          <Circle size='56px' borderWidth={2} borderColor={'#555555'}>
+            <BiSearch fontSize={'36px'} color={'#555555'} />
           </Circle>
 
-          <Circle size='56px' borderWidth={1} borderColor={'gray'}>
-            <Avatar boxSize={'64px'} color='red'/>
+          <Circle size='56px' borderWidth={2} borderColor={'#555555'}>
+            <Avatar boxSize={'53px'} bg='#F5F8FA' borderRadius={'100%'}/>
           </Circle>
 
           <Circle bg={'#F6B554'} size='56px'>
