@@ -18,9 +18,9 @@ import styles from '../styles/Home.module.css'
 export default function MenuDesktop () {
   return (
     <div className={styles.desktop}>
-      <Flex align={'center'} height={'88px'} bg={'red'} width={'100%'} mt={-10} justifyContent={'space-between'}>
+      <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={-10} justifyContent={'space-between'}>
         <Flex align={'center'}>
-          <Image ml={150} mr={80} src={'white.svg'} height={27.77}/>
+          <Image ml={'80px'} mr={'70px'} src={'white.svg'} height={'27.77px'}/>
 
           <Breadcrumb separator='' mr={70}>
             <BreadcrumbItem>
@@ -45,7 +45,7 @@ export default function MenuDesktop () {
           </Breadcrumb>
         </Flex>
 
-        <AvatarGroup spacing={20} mr={'150px'}>
+        <AvatarGroup spacing={15} mr={'70px'}>
           <Circle size='56px' borderWidth={1} borderColor={'gray'}>
             <SearchIcon />
           </Circle>
@@ -64,7 +64,8 @@ export default function MenuDesktop () {
               size='2em'
               bg='white'
               borderRadius={'100%'}
-              fontSize={'12px'}>
+              fontSize={'12px'}
+              color={'#4FBFA5'}>
               0
             </Circle>
           </Circle>
