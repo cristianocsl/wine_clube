@@ -108,13 +108,6 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
 .desktop {
   display: flex;
   width: 100%;
@@ -122,6 +115,7 @@
 
 .mobile {
   display: none;
+  width: 0;
 }
 
 @media(max-width: 990px) {
@@ -130,5 +124,6 @@
   }
   .mobile {
     display: flex;
+    width: 100%;
   }
 }

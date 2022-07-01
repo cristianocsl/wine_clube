@@ -31,11 +31,15 @@ export default function MenuMobile() {
 
   return (
     <div className={styles.mobile}>
-      <Flex ml={'-1em'} align={'center'}>
-        <Button ref={btnRef} colorScheme='teal' mr={'27px'} onClick={onOpen}>
-          <HamburgerIcon boxSize={'27px'}/>
-        </Button>
-        <Image mr={100} src={'white.svg'} height={'22px'}/>
+      <Flex height={'72px'} align={'center'} bg={'red'} width={'100%'} mt={-10} pr={'16px'} justifyContent={'space-between'}>
+
+        <Flex align={'center'} ml={'18.75px'}>
+          <Button ref={btnRef} colorScheme='teal' mr={'27px'} onClick={onOpen}>
+            <HamburgerIcon boxSize={'25px'}/>
+          </Button>
+
+          <Image mr={100} src={'white.svg'} height={'19px'}/>
+        </Flex>
 
         <Drawer
           isOpen={isOpen}
@@ -60,11 +64,19 @@ export default function MenuMobile() {
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
-        <AvatarGroup spacing={20}>
+        <AvatarGroup spacing={25}>
           <SearchIcon boxSize='26px' color={'gray'}/>
           <Circle bg={'#F6B554'} size='56px'>
             <Image boxSize={'55px'} src={'Bitmap.svg'} borderBottomRadius={'100%'} position={'absolute'}/>
-              <Circle position={'absolute'} borderColor='black' mt={'32px'} ml={'32px'} size='1.5em' bg='white' borderRadius={'100%'} >
+              <Circle
+                position={'absolute'}
+                borderColor='black'
+                mt={'36px'}
+                ml={'36px'}
+                size='2em'
+                bg='white'
+                borderRadius={'100%'}
+                fontSize={'12px'}>
                 0
               </Circle>
           </Circle>
