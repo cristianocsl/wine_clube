@@ -79,7 +79,8 @@ export default function MenuMobile() {
                 size='2em'
                 bg='white'
                 borderRadius={'100%'}
-                fontSize={'12px'}>
+                fontSize={'12px'}
+                color={'#4FBFA5'}>
                 0
               </Circle>
           </Circle>
