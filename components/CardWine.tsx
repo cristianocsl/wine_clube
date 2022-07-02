@@ -1,9 +1,15 @@
-import { Center, WrapItem, Image, Box, Text } from "@chakra-ui/react";
+import { Center, WrapItem, Image, Box, Text, Flex } from "@chakra-ui/react";
 import React from "react";
 import { WinesType } from "../services/typing";
 
 export default function CardWine(props: { wine: WinesType}) {
   const { wine } = props;
+  console.log(wine.priceMember.toString().split('.').pop()?.length)
+
+  function decimal() {
+    const thisDecimal = wine.priceMember.toString().split('.').pop()
+    return thisDecimal?.length === 1 ? `${thisDecimal}0` : thisDecimal
+  }
 
   return (
     <WrapItem margin={'0px'}>
@@ -18,8 +24,9 @@ export default function CardWine(props: { wine: WinesType}) {
         shadow={'lg'}
         mr={{ base: '14px', smm: '18px'}}
         ml={{ base: '14px', smm: '18px'}}
+        borderRadius={'4px'}
       >
-        <Image src={wine.image} alt={wine.name} height={'178.13px'}/>
+        <Image src={wine.image} alt={wine.name} height={'178.13px'} mb={'10px'}/>
         <Image
           src={'MaskGroup.svg'}
           alt={wine.name}
@@ -28,7 +35,77 @@ export default function CardWine(props: { wine: WinesType}) {
           ml={{ base: '-105px', lg: '170px' }}
           mt={{ base: '135px', lg: '125px' }}
         />
-        <Text align={'center'}>{wine.name}</Text>
+
+        <Center flexDirection={'column'} height={'100%'} justifyContent={'space-between'}>
+          <Text align={'center'} fontSize={'14px'}>{wine.name}</Text>
+
+          <Flex align={'center'}>
+            <Text 
+              fontSize={'10px'}
+              color={'#888888'}
+              textDecoration={'line-through'}
+              mr={'4px'}
+            >
+              R${' ' + wine.priceNonMember.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
+            </Text>
+            <Text
+              fontSize={'12px'}
+              bg={'#F79552'}
+              width={'65px'}
+              height={'16.21px'}
+              align={'center'}
+              color={'white'}
+              borderRadius={'2px'}
+              pt={'1.8px'}
+            >
+              {wine.discount}% OFF
+            </Text>
+          </Flex>
+
+          <Flex alignContent={'center'}>
+            <Text 
+              fontSize={'10px'}
+              color={'#555555'}
+              textAlign={'right'}
+              mr={'8px'}
+            >
+              <Box> SÓCIO </Box><Box> WINE </Box>
+            </Text>
+
+            <Flex fontWeight={'bold'}>
+              <Text
+                color={'#C81A78'}
+                fontSize={'12px'}
+                alignSelf={'self-end'}
+                mr={'4px'}
+              >
+                R$
+              </Text>
+              <Text
+                fontSize={'22px'}
+                height={'16.21px'}
+                color={'#C81A78'}
+              >
+                {wine.priceMember.toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + ','}
+              </Text>
+              <Text
+                color={'#C81A78'}
+                fontSize={'12px'}
+                alignSelf={'self-end'}
+              >
+                { decimal() }
+              </Text>
+            </Flex>
+          </Flex>
+
+          <Text 
+            fontSize={'10px'}
+            color={'#888888'}
+            mt={'8.4px'}
+          >
+            NÃO SÓCIO
+          </Text>
+        </Center>
       </Center>
     </WrapItem>
   );
