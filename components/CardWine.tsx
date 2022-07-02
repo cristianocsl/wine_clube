@@ -13,16 +13,16 @@ export default function CardWine(props: { wine: WinesType}) {
         borderWidth={'1px'}
         flexDirection={'column'}
         padding={'10px'}
-        mt={'10px'}
+        justifyContent={'start'}
       >
-        <Image src={wine.image} alt={wine.name} height={'178.13px'} mt={'-70px'}/>
+        <Image src={wine.image} alt={wine.name} height={'178.13px'} mt={'0px'}/>
         <Image
           src={'MaskGroup.svg'}
           alt={wine.name}
           height={'38.94px'}
           position={'absolute'}
-          ml={'170px'}
-          mb={'21.5px'}
+          ml={{ base: '-105px', lg: '170px' }}
+          mb={{ base: '0px', lg: '21.5px' }}
         />
         <Box>{wine.name}</Box>
       </Center>
