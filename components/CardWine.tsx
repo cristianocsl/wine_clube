@@ -30,10 +30,10 @@ export default function CardWine(props: { wine: WinesType}) {
         <Image
           src={'MaskGroup.svg'}
           alt={wine.name}
-          height={'38.94px'}
+          height={{ base: '29', lg: '38.94px' }}
           position={'absolute'}
-          ml={{ base: '-105px', lg: '170px' }}
-          mt={{ base: '135px', lg: '125px' }}
+          ml={{ base: '-110px', lg: '170px' }}
+          mt={{ base: '145px', lg: '125px' }}
         />
 
         <Center flexDirection={'column'} height={'100%'} justifyContent={'space-between'}>
