@@ -37,7 +37,7 @@ export default function CardWine(props: { wine: WinesType}) {
         />
 
         <Center flexDirection={'column'} height={'100%'} justifyContent={'space-between'}>
-          <Text align={'center'} fontSize={'14px'}>{wine.name}</Text>
+          <Text align={'center'} fontSize={{ base: '14px', lg: '16px' }}>{wine.name}</Text>
 
           <Flex align={'center'}>
             <Text 
@@ -99,7 +99,7 @@ export default function CardWine(props: { wine: WinesType}) {
           </Flex>
 
           <Text 
-            fontSize={'10px'}
+            fontSize={{ base: '10px', lg: '12px' }}
             color={'#888888'}
             mt={'8.4px'}
           >
