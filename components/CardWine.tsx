@@ -41,7 +41,7 @@ export default function CardWine(props: { wine: WinesType}) {
 
           <Flex align={'center'}>
             <Text 
-              fontSize={'10px'}
+              fontSize={{ base: '10px', lg: '12px' }}
               color={'#888888'}
               textDecoration={'line-through'}
               mr={'4px'}
@@ -65,7 +65,7 @@ export default function CardWine(props: { wine: WinesType}) {
           <Flex alignContent={'center'}>
             <Text 
               fontSize={'10px'}
-              color={{ base: '#555555', smm: '#1D1D1B' }}
+              color={{ base: '#555555', lg: '#1D1D1B' }}
               textAlign={'right'}
               mr={'8px'}
             >
