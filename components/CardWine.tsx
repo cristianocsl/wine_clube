@@ -14,6 +14,8 @@ export default function CardWine(props: { wine: WinesType}) {
         flexDirection={'column'}
         padding={'10px'}
         justifyContent={'start'}
+        bg={'white'}
+        shadow={'sm'}
       >
         <Image src={wine.image} alt={wine.name} height={'178.13px'}/>
         <Image
@@ -21,8 +23,8 @@ export default function CardWine(props: { wine: WinesType}) {
           alt={wine.name}
           height={'38.94px'}
           position={'absolute'}
-          ml={{ base: '-105px', lg: '0px' }}
-          mt={{ base: '135px', lg: '-150px' }}
+          ml={{ base: '-105px', lg: '170px' }}
+          mt={{ base: '135px', lg: '125px' }}
         />
         <Box>{wine.name}</Box>
       </Center>
