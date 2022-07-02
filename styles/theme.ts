@@ -61,7 +61,8 @@ const theme = {
     xhuge: '6.4rem',
   },
   breakpoints: {
-    sm: '320px',
+    sm: '391px',
+    smm: '541px',
     md: '768px',
     lg: '913px',
     xl: '1200px',
