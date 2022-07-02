@@ -10,7 +10,6 @@ const axiosInstance = axios.create({
 const getWines = async () => {
   try {
     const { data } = await axiosInstance.get('');
-    console.log(data);
     return data;
   } catch (err: unknown) {
     return err;
