@@ -49,9 +49,9 @@ export default function CardWine(props: { wine: WinesType}) {
               R${' ' + wine.priceNonMember.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
             </Text>
             <Text
-              fontSize={'12px'}
+              fontSize={{ base: '12px', lg: '10px'}}
               bg={'#F79552'}
-              width={'65px'}
+              width={{ base: '65px', lg: '48.67px' }}
               height={'16.21px'}
               align={'center'}
               color={'white'}
