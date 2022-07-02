@@ -13,6 +13,7 @@ import styles from '../styles/Home.module.css'
 import { BiSearch } from 'react-icons/bi'
 
 export default function MenuDesktop () {
+
   return (
     <div className={styles.desktop}>
       <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={-10} justifyContent={'space-between'}>
