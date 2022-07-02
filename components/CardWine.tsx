@@ -15,14 +15,14 @@ export default function CardWine(props: { wine: WinesType}) {
         padding={'10px'}
         justifyContent={'start'}
       >
-        <Image src={wine.image} alt={wine.name} height={'178.13px'} mt={'0px'}/>
+        <Image src={wine.image} alt={wine.name} height={'178.13px'}/>
         <Image
           src={'MaskGroup.svg'}
           alt={wine.name}
           height={'38.94px'}
           position={'absolute'}
-          ml={{ base: '-105px', lg: '170px' }}
-          mb={{ base: '0px', lg: '21.5px' }}
+          ml={{ base: '-105px', lg: '0px' }}
+          mt={{ base: '135px', lg: '-150px' }}
         />
         <Box>{wine.name}</Box>
       </Center>
