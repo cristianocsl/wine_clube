@@ -1,3 +1,5 @@
+import { extendTheme } from "@chakra-ui/react";
+
 const theme = {
   colors: {
     primaryColor: '#0A1128',
@@ -58,6 +60,13 @@ const theme = {
     huge: '5.6rem',
     xhuge: '6.4rem',
   },
+  breakpoints: {
+    sm: '320px',
+    md: '768px',
+    lg: '913px',
+    xl: '1200px',
+    '2xl': '1536px',
+  }
 }
 
 export default theme
