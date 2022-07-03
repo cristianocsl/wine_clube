@@ -16,28 +16,28 @@ export default function MenuDesktop () {
 
   return (
     <div className={styles.desktop}>
-      <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={-10} justifyContent={'space-between'}>
+      <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={'-10px'} justifyContent={'space-between'}>
         <Flex align={'center'}>
           <Image ml={'80px'} mr={'70px'} src={'white.svg'} height={'27.77px'}/>
 
-          <Breadcrumb separator='' mr={70} color={'#555555'}>
-            <BreadcrumbItem>
+          <Breadcrumb separator='' color={'#555555'}>
+            <BreadcrumbItem _hover={{ color: '#D14B8F' }}>
               <BreadcrumbLink href='#' fontSize={'20px'}>Clube</BreadcrumbLink>
             </BreadcrumbItem>
 
-            <BreadcrumbItem>
+            <BreadcrumbItem _hover={{ color: '#D14B8F' }}>
               <BreadcrumbLink isCurrentPage href='#' fontSize={'20px'}>Loja</BreadcrumbLink>
             </BreadcrumbItem>
 
-            <BreadcrumbItem>
+            <BreadcrumbItem _hover={{ color: '#D14B8F' }}>
               <BreadcrumbLink href='#' fontSize={'20px'}>Produtores</BreadcrumbLink>
             </BreadcrumbItem>
 
-            <BreadcrumbItem>
+            <BreadcrumbItem _hover={{ color: '#D14B8F' }}>
               <BreadcrumbLink href='#' fontSize={'20px'}>Ofertas</BreadcrumbLink>
             </BreadcrumbItem>
 
-            <BreadcrumbItem>
+            <BreadcrumbItem _hover={{ color: '#D14B8F' }}>
               <BreadcrumbLink href='#' fontSize={'20px'}>Eventos</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
