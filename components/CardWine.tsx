@@ -4,11 +4,10 @@ import { WinesType } from "../services/typing";
 
 export default function CardWine(props: { wine: WinesType}) {
   const { wine } = props;
-  console.log(wine.priceMember.toString().split('.').pop()?.length)
 
   function decimal() {
-    const thisDecimal = wine.priceMember.toString().split('.').pop()
-    return thisDecimal?.length === 1 ? `${thisDecimal}0` : thisDecimal
+    const thisDecimal = wine.priceMember.toString().split('.').pop();
+    return thisDecimal?.length === 1 ? `${thisDecimal}0` : thisDecimal;
   }
 
   return (
