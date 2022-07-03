@@ -1,4 +1,4 @@
-import { Center, WrapItem, Image, Box, Text, Flex } from "@chakra-ui/react";
+import { Center, WrapItem, Image, Box, Text, Flex, Button } from "@chakra-ui/react";
 import React from "react";
 import { WinesType } from "../services/typing";
 
@@ -12,7 +12,7 @@ export default function CardWine(props: { wine: WinesType}) {
   }
 
   return (
-    <WrapItem margin={'0px'}>
+    <WrapItem margin={'0px'} display={'block'} textAlign={'center'}>
       <Center
         key={wine.id}
         width={{ base: '140px', sm: '156px', lg: '256px'}}
@@ -107,6 +107,19 @@ export default function CardWine(props: { wine: WinesType}) {
           </Text>
         </Center>
       </Center>
+
+      <Button
+        mt={{ base: '8px', lg: '16px' }}
+        width={{ base: '140px', sm: '156px', lg: '256px'}}
+        bg={'#7EBC43'}
+        color={'white'}
+        borderRadius={'4px'}
+        fontSize={'14px'}
+        height={'40px'}
+        mb={{ base: '24px', lg: '30.64px' }}
+      >
+        Adicionar
+      </Button>
     </WrapItem>
   );
 }
