@@ -20,7 +20,7 @@ export default function CardWine(props: { wine: WinesType}) {
         padding={'10px'}
         justifyContent={'start'}
         bg={'white'}
-        shadow={'lg'}
+        shadow={'md'}
         mr={{ base: '14px', smm: '18px'}}
         ml={{ base: '14px', smm: '18px'}}
         borderRadius={'4px'}
@@ -118,6 +118,10 @@ export default function CardWine(props: { wine: WinesType}) {
         mb={{ base: '24px', lg: '30.64px' }}
         textTransform={{ base: 'capitalize', lg: 'uppercase'}}
         fontWeight={'bold'}
+        shadow={'base'}
+        colorScheme='teal'
+        _hover={{ bg: '#457F0D' }}
+        
       >
         Adicionar
       </Button>
