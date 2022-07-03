@@ -117,6 +117,8 @@ export default function CardWine(props: { wine: WinesType}) {
         fontSize={'14px'}
         height={'40px'}
         mb={{ base: '24px', lg: '30.64px' }}
+        textTransform={{ base: 'capitalize', lg: 'uppercase'}}
+        fontWeight={'bold'}
       >
         Adicionar
       </Button>
