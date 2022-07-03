@@ -63,23 +63,25 @@ export default function CardWine(props: { wine: WinesType}) {
             </Text>
           </Flex>
 
-          <Flex alignContent={'center'}>
+          <Flex alignItems={'flex-end'}>
             <Text 
               fontSize={'10px'}
               fontWeight={'bold'}
               color={{ base: '#555555', lg: '#1D1D1B' }}
-              textAlign={'right'}
-              mr={'8px'}
+              textAlign={'end'}
+              pr={{ base: '12px', lg: '8px' }}
+              wordBreak={{ base: 'break-word', lg: 'normal' }}
             >
-              <Box> SÓCIO </Box><Box> WINE </Box>
+              SÓCIO WINE
             </Text>
 
-            <Flex fontWeight={'bold'}>
+            <Flex fontWeight={'bold'} textAlign={'start'}>
               <Text
                 color={'#C81A78'}
                 fontSize={'12px'}
                 alignSelf={'self-end'}
                 mr={'4px'}
+                mt={'9px'}
               >
                 R$
               </Text>
