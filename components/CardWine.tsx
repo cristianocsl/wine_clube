@@ -41,6 +41,7 @@ export default function CardWine(props: { wine: WinesType}) {
           <Flex align={'center'}>
             <Text 
               fontSize={{ base: '10px', lg: '12px' }}
+              fontWeight={'bold'}
               color={'#888888'}
               textDecoration={'line-through'}
               mr={'4px'}
@@ -49,6 +50,7 @@ export default function CardWine(props: { wine: WinesType}) {
             </Text>
             <Text
               fontSize={{ base: '12px', lg: '10px'}}
+              fontWeight={'bold'}
               bg={'#F79552'}
               width={{ base: '65px', lg: '48.67px' }}
               height={'16.21px'}
@@ -64,6 +66,7 @@ export default function CardWine(props: { wine: WinesType}) {
           <Flex alignContent={'center'}>
             <Text 
               fontSize={'10px'}
+              fontWeight={'bold'}
               color={{ base: '#555555', lg: '#1D1D1B' }}
               textAlign={'right'}
               mr={'8px'}
@@ -101,6 +104,7 @@ export default function CardWine(props: { wine: WinesType}) {
             fontSize={{ base: '10px', lg: '12px' }}
             color={'#888888'}
             mt={'8.4px'}
+            fontWeight={'bold'}
           >
             NÃO SÓCIO
           </Text>
@@ -121,7 +125,7 @@ export default function CardWine(props: { wine: WinesType}) {
         shadow={'base'}
         colorScheme='teal'
         _hover={{ bg: '#457F0D' }}
-        
+
       >
         Adicionar
       </Button>
