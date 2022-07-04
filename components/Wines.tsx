@@ -6,16 +6,12 @@ import CardWine from "./CardWine";
 import MyRadioGroup from "./RadioGroup";
 import Loading from "./Loading";
 export default function Wines() {
-  const { wines, filterByPrice } = useContext(MyContext);
-  const [radioValue, setRadioValue] = useState(1);
+  const { wines, filterByPrice, filteredWines } = useContext(MyContext);
   
-  const filtered = filterByPrice(radioValue);
-  console.log('radio value: ', filtered);
-
   if (!wines) return <Loading />;
   return (
     <Flex bg={'background'}>
-      <MyRadioGroup setRadioValue={setRadioValue}/>
+      <MyRadioGroup filterByPrice={filterByPrice}/>
       <Box>
         <Box
           pt={'39.77px'}
@@ -27,7 +23,7 @@ export default function Wines() {
 
         <Wrap justify={'center'}>
           {
-            wines.map((wine) => <CardWine key={wine.id} wine={wine} />)
+            filteredWines.map((wine) => <CardWine key={wine.id} wine={wine} />)
           }
         </Wrap>
       </Box>
