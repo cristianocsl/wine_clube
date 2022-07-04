@@ -22,6 +22,7 @@ export type WinesType = {
 const initialValue = {
   wines: [] as WinesType,
   setWines: (wines: WinesType) => {},
+  filterByPrice: (value: number) => {},
 }
 
 const MyContext = createContext(initialValue);
