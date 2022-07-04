@@ -4,9 +4,11 @@ import MyContext from "../context/MyContext";
 import theme from "../styles/theme";
 import CardWine from "./CardWine";
 import MyRadioGroup from "./RadioGroup";
-
+import Loading from "./Loading";
 export default function Wines() {
   const { wines } = useContext(MyContext);
+
+  if (!wines) return <Loading />;
   return (
     <Flex bg={'background'}>
       <MyRadioGroup/>
@@ -14,7 +16,7 @@ export default function Wines() {
         <Box
           pt={'39.77px'}
           pb={'32px'}
-          ml={{ base: '20px', lgg: '15%' }}
+          ml={{ base: '20px', lgg: '7%' }}
           color={'#262626'}>
           Produtos encontrados
         </Box>
