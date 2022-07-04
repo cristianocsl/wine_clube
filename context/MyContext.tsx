@@ -21,6 +21,7 @@ export type WinesType = {
 
 const initialValue = {
   wines: [] as WinesType,
+  filteredWines: [] as WinesType,
   setWines: (wines: WinesType) => {},
   filterByPrice: (value: number) => {},
 }
