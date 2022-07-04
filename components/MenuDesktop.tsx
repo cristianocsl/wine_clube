@@ -16,7 +16,7 @@ export default function MenuDesktop () {
 
   return (
     <div className={styles.desktop}>
-      <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={'-10px'} justifyContent={'space-between'}>
+      <Flex align={'center'} height={'88px'} bg={'white'} width={'100%'} mt={'-40px'} justifyContent={'space-between'}>
         <Flex align={'center'}>
           <Image ml={'80px'} mr={'70px'} src={'white.svg'} height={'27.77px'}/>
 
@@ -49,7 +49,7 @@ export default function MenuDesktop () {
           </Circle>
 
           <Circle size='56px' borderWidth={2} borderColor={'#555555'}>
-            <Avatar boxSize={'53px'} bg='#F5F8FA' borderRadius={'100%'}/>
+            <Avatar boxSize={'52px'} bg='gray.200' borderRadius={'100%'}/>
           </Circle>
 
           <Circle bg={'#F6B554'} size='56px'>
