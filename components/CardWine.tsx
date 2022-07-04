@@ -57,7 +57,6 @@ export default function CardWine(props: { wine: WinesType}) {
               align={'center'}
               color={'white'}
               borderRadius={'2px'}
-              pt={'1.8px'}
             >
               {wine.discount}% OFF
             </Text>
