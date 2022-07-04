@@ -8,7 +8,7 @@ import Provider from '../context/Provider'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider resetCSS theme={theme}>
         <GlobalStyle />
           <Provider>
             <Component {...pageProps} />
