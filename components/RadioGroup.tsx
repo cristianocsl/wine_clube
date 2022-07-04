@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack, Radio, RadioGroup, Text } from '@chakra-ui/react'
 
-export default function MyRadioGroup() {
+export default function MyRadioGroup(props: any) {
+  const { setRadioValue } = props;
   return (
     <RadioGroup bg={'background'}
       width={{ base: '0px', lg: '550px'}}
@@ -10,6 +11,7 @@ export default function MyRadioGroup() {
       color={'#1D1D1B'}
       mt={'100px'}
       ml={'50px'}
+      onChange={setRadioValue}
     >
       <Stack>
         <Radio value='1'>Até R$40</Radio>

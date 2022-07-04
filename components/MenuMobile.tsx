@@ -35,7 +35,7 @@ export default function MenuMobile() {
       <Flex height={'72px'} align={'center'} bg={'white'} width={'100%'} mt={-10} pr={'16px'} justifyContent={'space-between'}>
 
         <Flex align={'center'} ml={'18.75px'}>
-          <Button ref={btnRef} colorScheme='teal' mr={'27px'} onClick={onOpen}>
+          <Button ref={btnRef} bg={'white'} mr={'27px'} onClick={onOpen}>
             <HamburgerIcon boxSize={'25px'}/>
           </Button>
 
@@ -50,7 +50,7 @@ export default function MenuMobile() {
             finalFocusRef={btnRef}
           >
             <DrawerOverlay bg={'#F5F8FA'} width={'280px'}/>
-            <DrawerContent alignItems={'start'}>
+            <DrawerContent bg={'#F5F8FA'} alignItems={'start'}>
               <DrawerCloseButton alignSelf={'start'} mt={'20px'} ml={'245px'} color={'black'}/>
 
               <DrawerHeader display={'flex'} bg={'#F5F8FA'} alignItems={'center'} position={'relative'} mt={'-10px'} ml={'20px'}>
