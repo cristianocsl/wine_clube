@@ -65,6 +65,7 @@ const theme = {
     smm: '541px',
     md: '768px',
     lg: '913px',
+    lgg: '990px',
     xl: '1200px',
     '2xl': '1536px',
   },
@@ -81,7 +82,15 @@ const theme = {
     none: "none",
     "dark-lg":
       "rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px",
-  }
+  },
+  styles: {
+    global: {
+      body: {
+        bg: '#F5F8FA',
+        color: 'black',
+      },
+    },
+  },
 }
 
-export default theme
+export default extendTheme(theme)
