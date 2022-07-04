@@ -19,7 +19,6 @@ const Provider = ({ children }: Props) => {
   }, []);
 
   function filterByPrice(value: number) {
-    console.log('value: ', value);
       if (value === 6) {
         setFilteredWines(wines);
       }
