@@ -53,6 +53,8 @@ const Provider = ({ children }: Props) => {
     filteredWines,
   };
 
+  console.log('...Continuando...');
+
   return (
     <MyContext.Provider value={context}>
       { children }
